@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace ChallengesWithTestsMark8
 {
@@ -7,12 +6,12 @@ namespace ChallengesWithTestsMark8
     {
         public bool ArrayContainsAFalse(bool[] vals)
         {
-            foreach(var items in vals)
+            foreach (var items in vals)
             {
                 if (items == false)
                 {
                     return true;
-                } 
+                }
             }
             return false;
         }
@@ -22,11 +21,11 @@ namespace ChallengesWithTestsMark8
             var sum = 0;
             if (numbers == null) { return false; }
 
-            foreach(int item in numbers)
+            foreach (int item in numbers)
             {
                 if (item % 2 != 0)
                 {
-                   sum = item + sum; 
+                    sum = item + sum;
                 }
             }
             if (sum % 2 != 0)
@@ -42,12 +41,12 @@ namespace ChallengesWithTestsMark8
             var lower = false;
             var digit = false;
 
-            foreach(char item in password)
+            foreach (char item in password)
             {
-                if (char.IsUpper(item)) 
+                if (char.IsUpper(item))
                 {
                     upper = true;
-                } 
+                }
                 if (char.IsLower(item))
                 {
                     lower = true;
@@ -61,14 +60,14 @@ namespace ChallengesWithTestsMark8
                     return true;
                 }
             }
-             return false;
+            return false;
         }
 
         public char GetFirstLetterOfString(string val)
         {
             char firstLetter = val[0];
             return firstLetter;
-      
+
         }
 
         public char GetLastLetterOfString(string val)
@@ -87,10 +86,10 @@ namespace ChallengesWithTestsMark8
 
         public int LastMinusFirst(int[] nums)
         {
-            int last = nums[nums.Length -1];
+            int last = nums[nums.Length - 1];
             int first = nums[0];
             return last - first;
-            
+
         }
 
         public int[] GetOddsBelow100()

@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 
 namespace ChallengesWithTestsMark8
@@ -8,11 +7,11 @@ namespace ChallengesWithTestsMark8
     {
         public bool CharacterIsALetter(char c)
         {
-          if(char.IsLetter(c))
+            if (char.IsLetter(c))
             {
                 return true;
             }
-          return false;
+            return false;
             //throw new NotImplementedException();
         }
 
@@ -75,7 +74,7 @@ namespace ChallengesWithTestsMark8
 
         public int Sum(int[] numbers)
         {
-            if(numbers == null)
+            if (numbers == null)
             {
                 return 0;
             }
@@ -91,7 +90,7 @@ namespace ChallengesWithTestsMark8
                 return 0;
             }
             return numbers.Where(x => x % 2 == 0).Sum();
-           // throw new NotImplementedException();
+            // throw new NotImplementedException();
         }
 
         public bool IsSumOdd(List<int> numbers)
@@ -103,12 +102,12 @@ namespace ChallengesWithTestsMark8
 
             return numbers.Sum() % 2 != 0;
 
-           // throw new NotImplementedException();
+            // throw new NotImplementedException();
         }
 
         public long CountOfPositiveOddsBelowNumber(long number)
         {
-            if(number <= 0)
+            if (number <= 0)
             {
                 return 0;
             }
@@ -116,7 +115,7 @@ namespace ChallengesWithTestsMark8
             {
                 return number / 2;
             }
-           // throw new NotImplementedException();
+            // throw new NotImplementedException();
         }
     }
 }
